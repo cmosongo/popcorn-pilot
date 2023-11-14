@@ -1,0 +1,59 @@
+,User,Movie,Rating
+0,ALICE,Star Wars,5.0
+1,FRANK,The Godfather,4.0
+2,BOB,Titanic,5.0
+3,CAROL,The Matrix,3.0
+4,DAVE,Inception,2.0
+5,EMILY,Pulp Fiction,4.0
+6,QUINCY,Star Wars,5.0
+7,BOB,Star Wars,2.0
+8,FRANK,Forrest Gump,3.0
+9,ALICE,The Matrix,4.0
+10,PAUL,Titanic,4.0
+11,CAROL,Inception,5.0
+12,DAVE,Titanic,4.0
+13,EMILY,The Godfather,5.0
+14,ALICE,Inception,3.0
+15,PAUL,The Godfather,5.0
+16,CAROL,Pulp Fiction,4.0
+17,IVY,Star Wars,5.0
+18,EMILY,Forrest Gump,3.0
+19,QUINCY,The Matrix,4.0
+20,IVY,The Matrix,4.0
+21,PAUL,Inception,1.0
+22,BOB,The Godfather,4.0
+23,FRANK,Star Wars,5.0
+24,IVY,Inception,3.0
+25,DAVE,Forrest Gump,5.0
+26,QUINCY,Inception,3.0
+27,KAREN,The Matrix,3.0
+28,LEO,Titanic,4.0
+29,MIA,The Godfather,5.0
+30,NINA,Star Wars,5.0
+31,OSCAR,The Matrix,4.0
+32,SARAH,Star Wars,4.0
+33,TOM,Pulp Fiction,4.0
+34,KAREN,Inception,5.0
+35,LEO,Inception,2.0
+36,MIA,Pulp Fiction,4.0
+37,NINA,The Godfather,4.0
+38,OSCAR,Pulp Fiction,2.0
+39,SARAH,Inception,4.0
+40,TOM,Inception,4.0
+41,VICTOR,The Godfather,4.0
+42,WENDY,Pulp Fiction,4.0
+43,ZANE,Pulp Fiction,3.5
+44,UMA,Titanic,5.0
+45,VICTOR,The Matrix,4.0
+46,WENDY,The Matrix,3.5
+47,XANDER,Forrest Gump,5.0
+48,YARA,Inception,4.0
+49,ZANE,Forrest Gump,3.5
+50,UMA,Star Wars,4.0
+51,YARA,The Matrix,4.0
+52,KAREN,Pulp Fiction,4.0
+53,LEO,Forrest Gump,5.0
+54,MIA,Forrest Gump,3.0
+55,NINA,Forrest Gump,3.0
+56,OSCAR,Forrest Gump,5.0
+57,ZANE,Star Wars,4.0
