@@ -23,8 +23,4 @@ User Interface:
 - Design a simple Command Line Interface (CLI) where a user can input their name to receive personalized movie recommendations.
 - Present these recommendations in a user-friendly format.
 
-Submission Details:
-Your solutions should be submitted by 14th November at 8:00 AM.
-Please ensure that the code is hosted on a GitHub repository, and is submitted using the following link: GitHub Repository Submission Link.
-
 
