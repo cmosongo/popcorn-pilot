@@ -69,14 +69,12 @@ cd into the respective folder:
 
 ```
 cd popcorn-pilot
-
 ```
 
 run:
 
 ```
 python src/main.py
-
 ```
 #### CLI for interaction.
 
