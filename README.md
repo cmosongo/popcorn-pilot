@@ -1,8 +1,8 @@
 # popcorn-pilot
-popcorn-pilot is a simple movie recommendation system based of a challenge. The purpose of the challenge is to develop a system providing more accurate and personalized movie recommendations. The solution will not only increase user engagement but also improve subscription renewals, making a significant impact in the world of entertainment.
+popcorn-pilot is a simple movie recommendation system based of a challenge. The purpose of the challenge is to develop a system providing more accurate and personalised movie recommendations. The solution will not only increase user engagement but also improve subscription renewals, making a significant impact in the world of entertainment.
 
 ## Challenge Breakdown
-The challenge involves the use of pre-existing user data and a current movie catalog to deliver personalized movie recommendations and can be chategorized in the following steps
+The challenge involves the use of preexisting user data and a current movie catalogue to deliver personalised movie recommendations and can be categorised in the following steps
 
 *[Data Analysis]()*
 - Data Cleaning
@@ -25,9 +25,9 @@ The data cleaning process revealed some flaw in the raw data.
 
  - The list of unique movies included  'Matrix' and 'The Matrix' which were combined as the was only one entry of the movie 'Matrix'
  
- - Users were converted to uppercase to limit any erronoes outcomes, and the strings treated as unique entries or IDs
+ - Users were converted to uppercase to limit any erroneous outcomes, and the strings treated as unique entries or IDs
  
- - The ratings had several different values but were required to be intergers  but were in several different formats. All none integer values were converted to `NaNs` and later filled using the median values of all ratings. The median values of all ratings seemed to mimic the true representation  of the sample as compared to the median of indiviual moveie ratings 
+ - The ratings had several different values but were required to be integers  but were in several different formats. All none integer values were converted to `NaNs` and later filled using the median values of all ratings. The median values of all ratings seemed to mimic the true representation  of the sample as compared to the median of individual movie ratings 
 
 
 From the data we can extract some valuable insights
@@ -43,17 +43,17 @@ The algorithm used relies on cosine similarity.
 
 Cosine similarity is a metric that measures the cosine of the angle between two vectors. i.e it compares the similarity between the preferences of users. 
 
-Each user and movie are represented as vectors in a high-dimensional space based on their ratings. The cosine similarity between these user and movie vectors is calculated, and movies with the highest cosine similarity to a user's preferences are recommended. 
+Each user and movie are represented as vectors in a dimensional space based on their ratings. The cosine similarity between these user and movie vectors is calculated, and movies with the highest cosine similarity to a user's preferences are recommended. 
 
 *Slight Modification*
 
-Given that cosine simiarity generates a matrix of siliraities based of historical ratings for all movies and ratings, I had to adjust for individual preferences of the user. I adjustd by weights depending on the ratings assigned to a paticular mvies and consequently, to the cosine similarity of its recommendations 
+Given that cosine similarity generates a matrix of similarities based of historical ratings for all movies and ratings, I had to adjust for individual preferences of the user. I adjusted by weights depending on the ratings assigned to a particular movies and consequently, to the cosine similarity of its recommendations 
 
-Essentially, the algorithm suggests movies that align closely with a user's historical preferences, making it a useful method for personalized movie recommendations
+Essentially, the algorithm suggests movies that align closely with a user's historical preferences, making it a useful method for personalised movie recommendations
 
 - Fallback system.
 
-The fallback system relies on the movies with the highest avarage ratings and simply recoomends three of the best, by rating. An alternative might be the movies with the highest similarity value in the csine similarity matrix.
+The fallback system relies on the movies with the highest average ratings and simply recommends three of the best, by rating. An alternative might be the movies with the highest similarity value in the cosine similarity matrix.
 
 ### User Interface
 
