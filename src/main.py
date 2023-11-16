@@ -59,31 +59,38 @@ def recommend_movies(user):
     return get_top_indices(final_df, 3)
 
 def main():
-    while True:
-        user_name = input("Please enter your name: ").upper()
+    user_name = input("Please enter your name: ").upper()
 
-        # Check if the user exists in the data
-        if user_name not in user_movie_matrix.index:
-            print("User not found !!!")
-            time.sleep(0.1)
-            print("Recommending popular movies.")
-            time.sleep(1)
-            popular_movies = average_ratings.sort_values(by='Rating', ascending=False)['Movie']
-            recommendations = list(popular_movies.head(3))
-            print(recommendations)
+    # Check if the user exists in the data
+    if user_name not in user_movie_matrix.index:
+        print(f"User {user_name} not found !!!")
+        time.sleep(0.1)
+        print("Recommending popular movies.")
+        time.sleep(1)
+        popular_movies = average_ratings.sort_values(by='Rating', ascending=False)['Movie']
+        recommendations = list(popular_movies.head(3))
 
-        else :
-            recommendations = list(recommend_movies(user_name))
-            print(f"Recommended movies for {user_name}")
-            time.sleep(1)
-            print(recommendations)
-        
+    else :
+        recommendations = list(recommend_movies(user_name))
+        print(f"Recommended movies for {user_name}")
+
+    time.sleep(1)
+    for mv in recommendations :
+            print(mv)
+
+    print("\n")
+
+
 
 # Check if the script is run as the main program
 if __name__ == "__main__":
     try:
-        # Call the main function
-        main()
+        while True:
+            # Call the main function
+            main()
+
     except KeyboardInterrupt:
         print('Exiting ...')
+        
+    
 
