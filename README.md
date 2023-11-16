@@ -70,6 +70,22 @@ cd into the respective folder:
 ```
 cd popcorn-pilot
 ```
+The following step can be skipped but is advisable if you work on different projects with different package versions
+
+ - Create virtual environment 
+
+`python3 -m venv .venv-lppls`
+
+ - Activate virtual environment 
+
+`$ .venv-lppls/bin/activate`
+
+
+Install the required packages
+
+```
+pip install -r requirements.txt
+```
 
 run:
 
@@ -85,6 +101,7 @@ Please enter your name: <user name>
 
 ```
 Example
+
 ```python 
 Please enter your name: dave
 ```
