@@ -1,7 +1,5 @@
 # popcorn-pilot
-popcorn-pilot is a simple movie recommendation system based of a challenge.
-
-The purpose of the challenge is to develop a system providing more accurate and personalized movie recommendations. The solution will not only increase user engagement but also improve subscription renewals, making a significant impact in the world of entertainment.
+popcorn-pilot is a simple movie recommendation system based of a challenge. The purpose of the challenge is to develop a system providing more accurate and personalized movie recommendations. The solution will not only increase user engagement but also improve subscription renewals, making a significant impact in the world of entertainment.
 
 ## Challenge Breakdown
 The challenge involves the use of pre-existing user data and a current movie catalog to deliver personalized movie recommendations and can be chategorized in the following steps
@@ -31,17 +29,12 @@ The data cleaning process revealed some flaw in the raw data.
  
  - The ratings had several different values but were required to be intergers  but were in several different formats. All none integer values were converted to `NaNs` and later filled using the median values of all ratings. The median values of all ratings seemed to mimic the true representation  of the sample as compared to the median of indiviual moveie ratings 
 
-- Value extraction
-
-
 
 From the data we can extract some valuable insights
 
-Users
 
 The distribution of movies by users is as seen below:
-
-![Distribution of Movies by User](images/dist_movies.png).
+![Distribution of Movies by User](images/dist_movies.png)
 
 
 ### Algorithm Development
@@ -63,7 +56,29 @@ Essentially, the algorithm suggests movies that align closely with a user's hist
 The fallback system relies on the movies with the highest avarage ratings and simply recoomends three of the best, by rating. An alternative might be the movies with the highest similarity value in the csine similarity matrix.
 
 ### User Interface
-- CLI for interaction.
+
+To run the program
+ 
+clone :
+
+```
+git clone https://github.com/cmosongo/popcorn-pilot.git
+```
+
+cd into the respective folder:
+
+```
+cd popcorn-pilot
+
+```
+
+run:
+
+```
+python src/main.py
+
+```
+#### CLI for interaction.
 
 When running the interface displays 
 
@@ -75,7 +90,7 @@ Example
 ```python 
 Please enter your name: dave
 ```
-And the output is as follows if the user exists 
+if the user exists 
 
 ```python 
 Recommended movies for DAVE
@@ -84,7 +99,7 @@ The Godfather
 Pulp Fiction
 ```
 
-ora s follows if the user does not exists 
+and if the user does not exists 
 
 ```python 
 User CHARLIE not found !!!
