@@ -19,7 +19,7 @@ The challenge involves the use of preexisting user data and a current movie cata
 
 
 ### Data Analysis
-- Data Cleaning
+#### Data Cleaning
 
 The data cleaning process revealed some flaw in the raw data.
 
@@ -29,12 +29,48 @@ The data cleaning process revealed some flaw in the raw data.
  
  - The ratings had several different values but were required to be integers  but were in several different formats. All none integer values were converted to `NaNs` and later filled using the median values of all ratings. The median values of all ratings seemed to mimic the true representation  of the sample as compared to the median of individual movie ratings 
 
+#### Analysis and Insights
 
-From the data we can extract some valuable insights
-
+Our list of movies include 
+ - Star Wars
+ - The Godfather
+ - Titanic
+ - The Matrix
+ - Inception
+ - Pulp Fiction
+ - Forrest Gump
 
 The distribution of movies by users is as seen below:
 ![Distribution of Movies by User](images/dist_movies.png)
+
+We can see that `Inception`, `Starwars` and `The Matrix ` are the most watched while `Titanic`, `The Godfather` and `Pulp Fiction` are the leats watched. We can gain further insights into this by looking at the average ratings of each movie
+
+| Movie          | Rating    |
+| -------------- | --------- |
+| The Godfather  | 4.428571  |
+| Titanic        | 4.400000  |
+| Star Wars      | 4.333333  |
+| Forrest Gump   | 3.944444  |
+| The Matrix     | 3.722222  |
+| Pulp Fiction   | 3.687500  |
+| Inception      | 3.272727  |
+
+
+It can be observed that despite `Inception` being one of the most watched, its average rating is the least. Similarly, `The Godfather` being the least watched  has a very high rating. 
+
+The median of ratings also tells a different story
+
+| Movie          | Rating    |
+| -------------- | --------- |
+| Star Wars      | 5.0       |
+| Pulp Fiction   | 4.0       |
+| The Godfather  | 4.0       |
+| The Matrix     | 4.0       |
+| Titanic        | 4.0       |
+| Forrest Gump   | 3.5       |
+| Inception      | 3.0       |
+
+From the median values, `Star Wars` has the highest rating.
 
 
 ### Algorithm Development
