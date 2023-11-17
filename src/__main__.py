@@ -16,9 +16,9 @@ from sklearn.impute import SimpleImputer
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# load data
-file_path = "../data/internal/data.csv"
 
+
+file_path = "data/internal/data.csv"
 data = pd.read_csv(file_path,
                   sep=",")
 
@@ -85,12 +85,14 @@ def main():
 # Check if the script is run as the main program
 if __name__ == "__main__":
     try:
+        # load data
+        #file_path = "../data/internal/data.csv"
+        
         while True:
             # Call the main function
             main()
 
     except KeyboardInterrupt:
         print('Exiting ...')
-        
-    
+
 

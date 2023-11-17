@@ -126,8 +126,14 @@ pip install -r requirements.txt
 run:
 
 ```
-python src/main.py
+python3 src
 ```
+
+or 
+```
+python src
+```
+
 #### CLI for interaction.
 
 When running the interface displays 
